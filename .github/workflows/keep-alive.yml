@@ -1,0 +1,13 @@
+name: Keep All Services Alive
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # every 10 minutes
+
+jobs:
+  ping-services:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Ecommerce App
+        run: curl -s https://ecommerce-eureka-service.onrender.com/actuator/health
+  
