@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Ecommerce App
-        run: curl -s https://https://ecommerce-spring-boot-monolith.onrender.com/actuator/health
+        run: curl -s https://ecommerce-spring-boot-monolith.onrender.com/actuator/health
   
